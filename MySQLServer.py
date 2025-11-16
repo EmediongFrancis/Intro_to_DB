@@ -1,6 +1,8 @@
 import mysql.connector
 from mysql.connector import Error
 
+DB_NAME = 'alx_book_store'
+
 try:
     # Connect to MySQL server (adjust user/password/host as needed)
     connection = mysql.connector.connect(
