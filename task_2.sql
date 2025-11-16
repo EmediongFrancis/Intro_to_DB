@@ -48,6 +48,6 @@ CREATE TABLE Order_Details (
     PRIMARY KEY (orderdetailid),
     INDEX idx_orderdetails_order (order_id),
     INDEX idx_orderdetails_book (book_id),
-    CONSTRAINT fk_orderdetails_order FOREIGN KEY (order_id) REFERENCES ORDERS(order_id) ON UPDATE CASCADE ON DELETE CASCADE,
-    CONSTRAINT fk_orderdetails_book FOREIGN KEY (book_id) REFERENCES BOOKS(book_id) ON UPDATE CASCADE ON DELETE RESTRICT
+    CONSTRAINT fk_orderdetails_order FOREIGN KEY (order_id) REFERENCES Orders(order_id) ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT fk_orderdetails_book FOREIGN KEY (book_id) REFERENCES Books(book_id) ON UPDATE CASCADE ON DELETE RESTRICT
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
