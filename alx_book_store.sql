@@ -1,6 +1,9 @@
 -- ALX Book Store schema
 -- Tables: AUTHORS, BOOKS, CUSTOMERS, ORDERS, ORDER_DETAILS
 
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+USE alx_book_store;
+
 DROP TABLE IF EXISTS `order_details`;
 DROP TABLE IF EXISTS `orders`;
 DROP TABLE IF EXISTS `books`;
