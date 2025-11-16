@@ -10,7 +10,7 @@ DROP TABLE IF EXISTS `books`;
 DROP TABLE IF EXISTS `authors`;
 DROP TABLE IF EXISTS `customers`;
 
-CREATE TABLE `authors` (
+CREATE TABLE `Authors` (
 	`author_id` INT NOT NULL AUTO_INCREMENT,
 	`author_name` VARCHAR(215) NOT NULL,
 	PRIMARY KEY (`author_id`)
